@@ -1,0 +1,103 @@
+*{
+        box-sizing: border-box;
+} 
+body{
+        margin: 0;
+}
+
+.divtop{
+        
+        text-align: center;
+        color: black;
+        background-color: yellow;
+        padding: 20px 50px;
+}
+.divsecond{
+       
+        text-align: center;
+        color: white;
+        background-color: rgb(44, 141, 109);
+        padding: 40px 0px;
+}
+.fourlinks{
+       
+        display:grid;
+       
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:'link1 link2 link3 link4 link5 link6';
+        /* display: flex;
+        flex-direction: row;
+        align-items: center; */
+        background-color: rgb(62, 60, 60);
+        padding: 20px;
+        
+
+}
+.fourlinks > a {
+        /* grid-area:link1 link2 link3 link4; */
+        text-decoration: none;
+        color: white;
+        margin-right: -15px;
+}
+.link1{
+        grid-area: link1;
+}
+.link2{
+        grid-area: link2;
+}
+.link3{
+        grid-area: link3;
+}
+.link4{
+        grid-area: link4;
+}
+.divmain{
+        display: grid;
+        grid-template-areas: 
+        'lf lf md md md ri'
+        'lf lf md md md ri'
+        'lf lf md md md ri'
+        ;
+}
+.divleft{
+        grid-area: lf;
+        /* display: flex;
+        flex-direction: column;
+        flex: 20%; */
+        background-color: rgb(235, 233, 233);
+        padding: 10px;
+        padding-bottom: 50px;
+}
+.divmiddle{
+        grid-area: md;
+        /* display: flex;
+        flex-direction: column;
+        flex: 50%; */
+        padding: 10px;
+}
+.divright{
+       grid-area: ri;
+        /* display: flex;
+        flex-direction: column;
+        flex: 30%; */
+        background-color: rgb(235, 233, 233);
+        padding: 10px;
+        padding-bottom: 50px;     
+}
+img{
+        width: 100%;
+        height: 220px;
+        margin: 5px 0px;
+}
+.footer{
+        
+        border: 1px solid rgb(132, 48, 51);
+        border-radius: 5px;
+        background-color: brown;
+        width: 100%;
+        height: 70px;
+        color: white;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+}
